@@ -20,8 +20,9 @@ public class Transportadora {
     @Column(name = "tem_AR", nullable = false)
     private boolean temAr; // tem que estar preenchido verdadeiro ou falso, não pode ser nulo!
 
-    @OneToOne
-    @JoinColumn(name = "numero_AR")
-    private AvisoRecebimento avisoRecebimento; // uma AR pertence a uma transportadora
+    //@OneToOne
+    //@JoinColumn(name = "numero_AR")
+    //private AvisoRecebimento avisoRecebimento; // uma AR pertence a uma transportadora
+    // exclui isso, ja que esta em cartao? (orientacao Matheus)
 
 }
